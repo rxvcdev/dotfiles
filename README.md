@@ -1,6 +1,4 @@
-# My Configuration Files
-
-I keep my config files here. Feel free to take a look around.
+# Configuration Files
 
 ## Installation
 
@@ -16,4 +14,7 @@ Remember to symlink the config files and directories:
 
 - `ln -s ~/.dotfiles/vim ~/.vim`
 - `ln -s ~/.dotfiles/vim/vimrc ~/.vimrc`
-- and so on...
+- `ln -s ~/.dotfiles/gitconfig ~/.gitconfig`
+- `ln -s ~/.dotfiles/vim/gvimrc ~/.vgimrc`
+- `ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf`
+- `ln -s ~/.dotfiles/zshrc ~/.zshrc`
