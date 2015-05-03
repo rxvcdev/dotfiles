@@ -1,6 +1,6 @@
 [user]
-  name = Jonathan Reyes
-  email = j@jreyes.org
+  name = Rodrigo Vallejo
+  email = rvallejo@thoughtworks.com
 
 [core]
   autocrlf = false
@@ -24,7 +24,7 @@
   ui = true
 
 [github]
-  user = jreyes33
+  user = rxvc
 
 [push]
   default = tracking

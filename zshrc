@@ -4,11 +4,11 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME='cloud'
+ZSH_THEME='robbyrussell'
 CASE_SENSITIVE=true
 COMPLETION_WAITING_DOTS=true
 
-plugins=(brew brew-cask bundler command-not-found debian gem git gradle npm nyan pip rails rvm tmux vagrant)
+plugins=(brew brew-cask bundler command-not-found debian gem git gradle npm nyan pip rails rvm vagrant tmux)
 
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOCONNECT=false
@@ -67,3 +67,14 @@ export _Z_DATA=$HOME/.z/z-data
 
 export PATH=$PATH:$HOME/.rvm/bin
 [[ -s $HOME/.rvm/scripts/rvm ]] && . $HOME/.rvm/scripts/rvm
+
+
+ [ -r "$HOME/.smartcd_config" ] && ( [ -n $BASH_VERSION ] || [ -n $ZSH_VERSION ] ) && source ~/.smartcd_config
+ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/
+ export PATH=/usr/local/sbin:$PATH
+
+ [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/rvallejo/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
