@@ -8,7 +8,7 @@ ZSH_THEME='robbyrussell'
 CASE_SENSITIVE=true
 COMPLETION_WAITING_DOTS=true
 
-plugins=(brew brew-cask bundler command-not-found debian gem git gradle npm nyan pip rails rvm vagrant tmux)
+plugins=(git gradle vagrant tmux)
 
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOCONNECT=false
