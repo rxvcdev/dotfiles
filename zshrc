@@ -29,7 +29,6 @@ export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
 export EDITOR=vim
 
 unsetopt auto_name_dirs
-unalias ag
 alias please='sudo'
 alias gs='git status'
 compdef _git gs=git-status
