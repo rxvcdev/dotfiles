@@ -57,23 +57,20 @@ compdef _gradlew_tasks gw
 # Allow Ctrl-s in vim
 stty -ixon
 
-export _Z_DATA=$HOME/.z/z-data
-[[ -s $HOME/.z/z.sh ]] && . $HOME/.z/z.sh
+#export _Z_DATA=$HOME/.z/z-data
+#[[ -s $HOME/.z/z.sh ]] && . $HOME/.z/z.sh
 
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+#[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 
-[[ -s /usr/local/bin/virtualenvwrapper.sh ]] && . /usr/local/bin/virtualenvwrapper.sh
+#[[ -s /usr/local/bin/virtualenvwrapper.sh ]] && . /usr/local/bin/virtualenvwrapper.sh
 
-export PATH=$PATH:$HOME/.rvm/bin
-[[ -s $HOME/.rvm/scripts/rvm ]] && . $HOME/.rvm/scripts/rvm
+#export PATH=$PATH:$HOME/.rvm/bin
+#[[ -s $HOME/.rvm/scripts/rvm ]] && . $HOME/.rvm/scripts/rvm
 
 
- [ -r "$HOME/.smartcd_config" ] && ( [ -n $BASH_VERSION ] || [ -n $ZSH_VERSION ] ) && source ~/.smartcd_config
- export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/
- export PATH=/usr/local/sbin:$PATH
+ #[ -r "$HOME/.smartcd_config" ] && ( [ -n $BASH_VERSION ] || [ -n $ZSH_VERSION ] ) && source ~/.smartcd_config
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/
+# export PATH=/usr/local/sbin:$PATH
 
- [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
+# [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/rvallejo/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
