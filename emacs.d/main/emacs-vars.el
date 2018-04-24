@@ -10,6 +10,8 @@
  require-final-newline               t
  next-line-add-newlines              nil
  display-time-24hr-format            t
+ auto-save-default                   t
+ auto-save-visited-file-name         t
  )
 
 ;; auto insert closing bracket

@@ -22,9 +22,10 @@
 
 (setq package-list '(
                      monokai-alt-theme
-		     nlinum
-		     neotree
-		     monokai-theme
+                     nlinum
+                     neotree
+                     monokai-theme
+                     powerline
                      ))
 
 
