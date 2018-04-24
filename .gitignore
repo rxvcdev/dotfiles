@@ -2,3 +2,5 @@ vim/_backup/*
 vim/_temp/*
 !vim/_backup/.gitkeep
 !vim/_temp/.gitkeep
+emacs.d/elpa/*
+emacs.d/network-security.data
