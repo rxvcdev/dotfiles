@@ -74,3 +74,5 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Hom
 
 # [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 
+#export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+

@@ -18,3 +18,4 @@ Remember to symlink the config files and directories:
 - `ln -s ~/.dotfiles/vim/gvimrc ~/.vgimrc`
 - `ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf`
 - `ln -s ~/.dotfiles/zshrc ~/.zshrc`
+- `ln -s ~/.dotfiles/emacs.d ~/.emacs.d`
