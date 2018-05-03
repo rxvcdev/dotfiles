@@ -36,6 +36,7 @@ alias glr='git pull --rebase'
 compdef _git glr=git-pull
 alias gsinit='git submodule update --init --recursive'
 alias gspull='git submodule foreach git pull origin master'
+alias emacs='emacs -nw'
 
 # Waiting for this PR to be merged: https://github.com/robbyrussell/oh-my-zsh/pull/3661
 _gradlew_tasks () {
@@ -57,22 +58,4 @@ compdef _gradlew_tasks gw
 # Allow Ctrl-s in vim
 stty -ixon
 
-#export _Z_DATA=$HOME/.z/z-data
-#[[ -s $HOME/.z/z.sh ]] && . $HOME/.z/z.sh
-
-#[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
-
-#[[ -s /usr/local/bin/virtualenvwrapper.sh ]] && . /usr/local/bin/virtualenvwrapper.sh
-
-#export PATH=$PATH:$HOME/.rvm/bin
-#[[ -s $HOME/.rvm/scripts/rvm ]] && . $HOME/.rvm/scripts/rvm
-
-
- #[ -r "$HOME/.smartcd_config" ] && ( [ -n $BASH_VERSION ] || [ -n $ZSH_VERSION ] ) && source ~/.smartcd_config
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/
-# export PATH=/usr/local/sbin:$PATH
-
-# [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
-
-#export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-
