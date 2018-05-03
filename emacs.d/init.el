@@ -12,6 +12,9 @@
 (require 'emacs-packages)
 (require 'emacs-custom) 
 (require 'emacs-vars)
+(require 'neotree)
+(require 'powerline)
+(require 'airline-themes)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -21,12 +24,12 @@
  )
 ;; Load monokai theme
 (load-theme 'monokai t)
+;; Load airline powerlineish theme
+(load-theme 'airline-powerlineish t)
+(powerline-default-theme)
+(projectile-mode)
 
-(require 'neotree)
-(global-set-key [f8] 'neotree-toggle)
-
+;; Set default size 
 (add-to-list 'default-frame-alist '(height . 500))
 (add-to-list 'default-frame-alist '(width . 270))
 
-(require 'powerline)
-(powerline-default-theme)

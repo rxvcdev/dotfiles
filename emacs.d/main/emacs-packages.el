@@ -25,7 +25,10 @@
                      nlinum
                      neotree
                      monokai-theme
+                     airline-themes
                      powerline
+                     evil
+                     projectile
                      ))
 
 

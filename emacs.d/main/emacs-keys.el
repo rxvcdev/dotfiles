@@ -40,6 +40,10 @@
 
   ;; go to line key
   (global-set-key (kbd "C-l") 'goto-line)
+
+  ;; neotree
+  (global-set-key [f8] 'neotree-toggle)
+
   )
 
 (provide 'emacs-keys)
