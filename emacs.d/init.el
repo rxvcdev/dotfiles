@@ -33,3 +33,5 @@
 (add-to-list 'default-frame-alist '(height . 500))
 (add-to-list 'default-frame-alist '(width . 270))
 
+;; Activate auto complete plugin
+(ac-config-default)

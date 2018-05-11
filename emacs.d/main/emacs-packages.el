@@ -9,6 +9,7 @@
                      powerline
                      evil
                      projectile
+                     auto-complete
                      ))
 
 
