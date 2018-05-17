@@ -1,0 +1,1 @@
+("~/vivas/reporting-cli/" "~/Thoughtworks/senescyt/fachada-titulos/" "~/Thoughtworks/senescyt/sniese-ui/")
