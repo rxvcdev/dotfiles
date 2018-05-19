@@ -40,8 +40,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-BASE16_SHELL=$(dirname ${(%):-%x})
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+#BASE16_SHELL=$(dirname ${(%):-%x})
+#[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 # Load tmux at the beginning
 if [ "$TMUX" = "" ]; then tmux; fi
