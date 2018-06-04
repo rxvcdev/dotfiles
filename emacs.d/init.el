@@ -10,8 +10,9 @@
 
 (require 'emacs-keys)
 (require 'emacs-packages)
-(require 'emacs-custom) 
+(require 'emacs-custom)
 (require 'emacs-vars)
+(require 'emacs-automode)
 (require 'neotree)
 (require 'powerline)
 (require 'airline-themes)
@@ -32,6 +33,3 @@
 ;; Set default size 
 (add-to-list 'default-frame-alist '(height . 500))
 (add-to-list 'default-frame-alist '(width . 270))
-
-;; Activate auto complete plugin
-(ac-config-default)

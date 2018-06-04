@@ -1,15 +1,17 @@
 (require 'package)
 
 (setq package-list '(
-                     monokai-alt-theme
+		     airline-themes
+		     auto-complete
+		     dockerfile-mode
+		     evil
+		     monokai-alt-theme
                      nlinum
                      neotree
                      monokai-theme
-                     airline-themes
                      powerline
-                     evil
                      projectile
-                     auto-complete
+                     yaml-mode
                      ))
 
 
