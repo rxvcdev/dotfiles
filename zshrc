@@ -19,7 +19,7 @@ SAVEHIST=10000
 HISTFILE=~/.zsh_history
 #Prompt color and model
 PROMPT="%F{240}\$(repeat \$COLUMNS printf '·')%f"
-PROMPT+='%B%F{green}%n%F{green}:%F{blue}%(3~|…|)%2~%F{green} * %b%f'
+PROMPT+='%B%F{green}%n%F{green}:%F{blue}%(3~|…|)%2~%F{green} *-> %b%f'
 
 unsetopt auto_name_dirs
 
