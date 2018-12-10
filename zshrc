@@ -27,7 +27,9 @@ unsetopt auto_name_dirs
 alias emacs='emacs -nw'
 
 #Java export
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export PATH=$JAVA_HOME/bin:$PATH
 
 #Terminal Color
 export CLICOLOR=1
@@ -45,3 +47,26 @@ export NVM_DIR="$HOME/.nvm"
 
 # Load tmux at the beginning
 if [ "$TMUX" = "" ]; then tmux; fi
+
+#Go
+export GOPATH=$HOME/go-workspace # don't forget to change your path correctly!
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+export PATH="/usr/local/sbin:$PATH"
+
+#Aliases
+alias gp='git pull'
+alias gpr='git pull --rebase'
+alias gcm='git commit -m'
+alias gca='git commit --amend'
+alias ga='git add'
+alias gst='git status'
+alias gpu='git push'
+
+
+#Delaware ENV variables DELETE IT
+export GROUP1001_CORE_PATH=/Users/rvallejo/Thoughtworks/Delaware/core
+export PYTHONPATH=/usr/local/bin/python3
+export GROUP1001_VAULT_PASSWORD_PATH=/Users/rvallejo/Thoughtworks/Delaware/secrets.vault.password.file
+export GROUP1001_TEAMCITY_PEM_PATH=/Users/rvallejo/Thoughtworks/Delaware/
