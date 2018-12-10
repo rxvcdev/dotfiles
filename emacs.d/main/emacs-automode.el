@@ -4,6 +4,8 @@
 (auto-mode "Dockerfile$" 'dockerfile-mode)
 (auto-mode "\\.yml$" 'yaml-mode)
 (auto-mode "\\.java$" 'jde-mode)
+(auto-mode "\\.tf$" 'terraform-mode)
+(auto-mode "\\.gredle$" 'gradle-mode)
 
 
 (provide 'emacs-automode)

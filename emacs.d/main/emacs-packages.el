@@ -1,17 +1,21 @@
 (require 'package)
 
 (setq package-list '(
-		     airline-themes
-		     auto-complete
-		     dockerfile-mode
-		     evil
-		     monokai-alt-theme
+                     airline-themes
+                     auto-complete
+                     dockerfile-mode
+                     evil
+                     monokai-alt-theme
                      nlinum
                      neotree
                      monokai-theme
                      powerline
                      projectile
                      yaml-mode
+                     go-mode
+                     scala-mode
+                     terraform-mode
+                     gradle-mode
                      ))
 
 
