@@ -56,6 +56,8 @@ export PATH=$PATH:$GOROOT/bin
 export PATH="/usr/local/sbin:$PATH"
 
 #Aliases
+
+#Git
 alias gp='git pull'
 alias gpr='git pull --rebase'
 alias gcm='git commit -m'
@@ -63,7 +65,8 @@ alias gca='git commit --amend'
 alias ga='git add'
 alias gst='git status'
 alias gpu='git push'
-
+alias glog='git log'
+alias gshow='git show'
 
 #Delaware ENV variables DELETE IT
 export GROUP1001_CORE_PATH=/Users/rvallejo/Thoughtworks/Delaware/core
