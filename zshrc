@@ -26,9 +26,8 @@ unsetopt auto_name_dirs
 #Alias to start emacs in terminal window
 alias emacs='emacs -nw'
 
-#Java export
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+#Java export /Library/Java/JavaVirtualMachines/
+export JAVA_HOME=$(/usr/libexec/java_home -v 9)
 export PATH=$JAVA_HOME/bin:$PATH
 
 #Terminal Color
@@ -67,9 +66,3 @@ alias gst='git status'
 alias gpu='git push'
 alias glog='git log'
 alias gshow='git show'
-
-#Delaware ENV variables DELETE IT
-export GROUP1001_CORE_PATH=/Users/rvallejo/Thoughtworks/Delaware/core
-export PYTHONPATH=/usr/local/bin/python3
-export GROUP1001_VAULT_PASSWORD_PATH=/Users/rvallejo/Thoughtworks/Delaware/secrets.vault.password.file
-export GROUP1001_TEAMCITY_PEM_PATH=/Users/rvallejo/Thoughtworks/Delaware/
