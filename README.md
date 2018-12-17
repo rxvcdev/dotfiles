@@ -22,16 +22,20 @@ Remember to symlink the config files and directories:
 
 If your using MacOS to use zsh as default bash:
 `sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh`
+
 `which zsh`
+
 `dscl . -read /Users/$USER UserShell`
 
 Using OpenJDK for MacOs
 Latest:
 
 `brew cask install adoptopenjdk`
+
 Other Versions:
 
 `brew tap AdoptOpenJDK/openjdk`
+
 `brew cask install <version>`
 
 Versions

@@ -120,7 +120,8 @@ noremap <silent> j gj
 colorscheme monokai
 
 " Vim-gitgutter config
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
+" let g:gitgutter_sign_column_always = 1
 
 " Emmet config
 let g:user_emmet_settings = {
