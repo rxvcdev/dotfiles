@@ -16,6 +16,8 @@
                      scala-mode
                      terraform-mode
                      gradle-mode
+		     adoc-mode
+		     zenburn-theme
                      ))
 
 

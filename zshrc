@@ -35,14 +35,11 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 
-#Node Version Manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-#BASE16_SHELL=$(dirname ${(%):-%x})
-#[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+#Node Version Manager installed with brew install nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 # Load tmux at the beginning
 if [ "$TMUX" = "" ]; then tmux; fi
@@ -66,3 +63,30 @@ alias gst='git status'
 alias gpu='git push'
 alias glog='git log'
 alias gshow='git show'
+
+#Kubectl alias
+alias k='kubectl'
+alias kcv='kubectl config view'
+alias kcc='kubectl config use-context'
+
+#direnv configuration - install brew direnv
+eval "$(direnv hook zsh)"
+
+#brew install zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#brew tap sambadevi/powerlevel9k
+#brew install powerlevel9ksource /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+
+#kubectl autocompletion
+if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+
+#powerlevel9k customization
+export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs kubecontext aws nvm java_version node_version)
+export POWERLEVEL9K_KUBECONTEXT_BACKGROUND='241'
+export POWERLEVEL9K_JAVA_VERSION_BACKGROUND='245'
+export POWERLEVEL9K_NODE_VERSION_BACKGROUND='241'
+export POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+export POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "

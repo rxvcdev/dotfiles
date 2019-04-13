@@ -46,3 +46,13 @@ Versions
     OpenJDK11 - adoptopenjdk11
 
 ref:https://stackoverflow.com/questions/52524112/how-do-i-install-java-11-on-mac-osx-allowing-version-switching
+
+Install Font hasck nerd font 
+
+`brew tap caskroom/fonts`
+`brew cask install font-hack-nerd-font`
+
+if you want to install space vim go to the following link:
+
+`https://spacevim.org/quick-start-guide/`§
+

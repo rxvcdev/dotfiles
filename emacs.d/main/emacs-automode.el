@@ -6,6 +6,7 @@
 (auto-mode "\\.java$" 'jde-mode)
 (auto-mode "\\.tf$" 'terraform-mode)
 (auto-mode "\\.gredle$" 'gradle-mode)
+(auto-mode "\\.adoc$" 'adoc-mode)
 
 
 (provide 'emacs-automode)
