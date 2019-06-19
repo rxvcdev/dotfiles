@@ -90,3 +90,11 @@ export POWERLEVEL9K_NODE_VERSION_BACKGROUND='241'
 export POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 export POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
+
+#Set Python 3 as default
+export PYTHONPATH=/usr/local/bin/python3
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+
+#Alias for open mac vim outside terminal
+alias mvim="open -a MacVim.app $1"
+
