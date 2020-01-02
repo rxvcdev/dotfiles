@@ -27,8 +27,8 @@
   ui = true
 
 [github]
-  #user = rxvc
-  user = rvallejoinfoarmor
+  user = rxvc
+#user = rvallejoinfoarmor
 
 [push]
   default = tracking
