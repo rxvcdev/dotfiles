@@ -1,4 +1,28 @@
 export TERM='xterm-256color'
+#https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#option-4-install-nerd-fonts
+#https://github.com/Powerlevel9k/powerlevel9k/wiki/Show-Off-Your-Config
+#https://github.com/sevenfoxes/dotfiles/
+#https://github.com/ryanoasis/nerd-fonts
+#https://github.com/zsh-users/antigen
+source /usr/local/share/antigen/antigen.zsh
+source ~/.dotfiles/.theme
+antigen use oh-my-zsh
+antigen bundle StackExchange/blackbox
+antigen bundle brew
+antigen bundle command-not-found
+antigen bundle common-aliases
+antigen bundle docker
+antigen bundle docker-compose
+antigen bundle git
+antigen bundle golang
+antigen bundle npm
+antigen bundle nvm
+antigen bundle python
+antigen bundle tmux
+antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen apply
+
+export TERM='xterm-256color'
 export NCURSES_NO_UTF8_ACS=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -27,7 +51,8 @@ unsetopt auto_name_dirs
 alias emacs='emacs -nw'
 
 #Java export /Library/Java/JavaVirtualMachines/
-export JAVA_HOME=$(/usr/libexec/java_home -v 9)
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 
 #Terminal Color
@@ -77,24 +102,32 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #brew tap sambadevi/powerlevel9k
 #brew install powerlevel9ksource /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+#source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+#source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 
 #kubectl autocompletion
 if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 
-#powerlevel9k customization
-export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs kubecontext aws nvm java_version node_version)
-export POWERLEVEL9K_KUBECONTEXT_BACKGROUND='241'
-export POWERLEVEL9K_JAVA_VERSION_BACKGROUND='245'
-export POWERLEVEL9K_NODE_VERSION_BACKGROUND='241'
-export POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-export POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
-
 #Set Python 3 as default
-export PYTHONPATH=/usr/local/bin/python3
-export PATH="/usr/local/opt/libpq/bin:$PATH"
+#Install
+#brew install pyenv 
+#pyenv install 3.7.3
+#pyenv global 3.7.3
+#
+#echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+#brew install python =>3
+#brew install python@2 =>2
+if [ usr/local/bin/python3 ];
+then
+  alias python='python3'
+  alias pip='pip3'
+fi
 
 #Alias for open mac vim outside terminal
 alias mvim="open -a MacVim.app $1"
 
+#brew install fzf 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
