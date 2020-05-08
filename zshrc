@@ -105,8 +105,6 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 #source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 
-#kubectl autocompletion
-if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 
 #Set Python 3 as default
 #Install
@@ -131,3 +129,13 @@ alias mvim="open -a MacVim.app $1"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+#kubectl autocomplate
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+complete -F __start_kubectl k
+
+#Temporal Kubeconfig
+export KUBECONFIG=/Users/rvallejo/.kube/config:/Users/rvallejo/.kube/config.sandbox:/Users/rvallejo/.kube/config.qa:/Users/rvallejo/.kube/config.preview:/Users/rvallejo/.kube/config.mapi:/Users/rvallejo/.kube/config.nonprod
+
+#https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+export PATH="${PATH}:${HOME}/.krew/bin"
