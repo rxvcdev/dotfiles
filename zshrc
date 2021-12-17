@@ -7,17 +7,17 @@ export TERM='xterm-256color'
 source /usr/local/share/antigen/antigen.zsh
 source ~/.dotfiles/.theme
 antigen use oh-my-zsh
-antigen bundle StackExchange/blackbox
-antigen bundle brew
+#antigen bundle StackExchange/blackbox
+#antigen bundle brew
 antigen bundle command-not-found
 antigen bundle common-aliases
 antigen bundle docker
 antigen bundle docker-compose
 antigen bundle git
-antigen bundle golang
+#antigen bundle golang
 antigen bundle npm
-antigen bundle nvm
-antigen bundle python
+#antigen bundle nvm
+#antigen bundle python
 antigen bundle tmux
 antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
@@ -98,7 +98,7 @@ alias kcc='kubectl config use-context'
 eval "$(direnv hook zsh)"
 
 #brew install zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #brew tap sambadevi/powerlevel9k
 #brew install powerlevel9ksource /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
@@ -135,7 +135,20 @@ export PATH="$PATH:$HOME/.rvm/bin"
 complete -F __start_kubectl k
 
 #Temporal Kubeconfig
-export KUBECONFIG=/Users/rvallejo/.kube/config:/Users/rvallejo/.kube/config.sandbox:/Users/rvallejo/.kube/config.qa:/Users/rvallejo/.kube/config.preview:/Users/rvallejo/.kube/config.mapi:/Users/rvallejo/.kube/config.nonprod
+#export KUBECONFIG=/Users/rvallejo/.kube/config:/Users/rvallejo/.kube/config.sandbox:/Users/rvallejo/.kube/config.qa:/Users/rvallejo/.kube/config.preview:/Users/rvallejo/.kube/config.mapi:/Users/rvallejo/.kube/config.nonprod
 
 #https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 export PATH="${PATH}:${HOME}/.krew/bin"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/usr/local/share/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/share/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/usr/local/share/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/share//google-cloud-sdk/completion.zsh.inc'; fi
+
+alias ll='colorls -lA --sd --gs --group-directories-first'
+alias ls='colorls --group-directories-first'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
