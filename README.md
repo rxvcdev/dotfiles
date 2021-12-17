@@ -2,20 +2,13 @@
 
 ## Installation
 
-The first time the repo is cloned (or when new Vim plugins are installed), initialize its submodules by running:
+Install brew for macos env.
 
-- `git submodule update --init --recursive`
+Install zsh.
 
-Later, to update the submodules run:
+Symlink the config files and directories:
 
-- `git submodule foreach git pull origin master`
-
-Remember to symlink the config files and directories:
-
-- `ln -s ~/.dotfiles/vim ~/.vim`
-- `ln -s ~/.dotfiles/vim/vimrc ~/.vimrc`
 - `ln -s ~/.dotfiles/gitconfig ~/.gitconfig`
-- `ln -s ~/.dotfiles/vim/gvimrc ~/.vgimrc`
 - `ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf`
 - `ln -s ~/.dotfiles/zshrc ~/.zshrc`
 - `ln -s ~/.dotfiles/emacs.d ~/.emacs.d`
