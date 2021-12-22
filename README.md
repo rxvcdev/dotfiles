@@ -6,8 +6,36 @@ Install brew for macos env.
 
 Install zsh.
 
-Symlink the config files and directories:
+Install tmux.
 
+`brew install tmux`
+
+Install Antigen
+
+`brew install antigen`
+
+Install direnv
+
+`brew install direnv`
+
+Install colorls
+
+`sudo gem install colorls`
+
+Install bash-completion
+
+`brew install bash-completion`
+
+Install brew zsh autosuggestions
+
+`brew install zsh-autosuggestions`
+
+Install macvim.
+
+`brew install macvim`
+
+Symlink the config files and directories:
+- `ln -s ~/.dotfiles/vim/gvimrc ~/.gvimrc`
 - `ln -s ~/.dotfiles/gitconfig ~/.gitconfig`
 - `ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf`
 - `ln -s ~/.dotfiles/zshrc ~/.zshrc`
